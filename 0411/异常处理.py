@@ -1,0 +1,9 @@
+try:
+    a=int(input('输入分子:'))
+    b=int(input('输入分母:'))
+    n=a/b
+    print(n)
+    print('#########')
+except:
+    print('输入数字错误')
+    print('************')
