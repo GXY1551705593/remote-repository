@@ -11,14 +11,14 @@ def talk():
 if __name__=='__main__':
     #print(threading.enumerate())
     ret=threading.Thread(target=eat)
-    #ret1=threading.Thread(target=talk)
+    ret1=threading.Thread(target=talk)
 
     #print(threading.enumerate())
-    ret.setDaemon(True)
+    #ret.setDaemon(True)
     ret.start()
 
     #ret1.setDaemon(True)
-    #ret1.start()
+    ret1.start()
     #print('程序结束')
-    exit()
+    #exit()
 
