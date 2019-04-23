@@ -5,7 +5,7 @@ import socket
 tcp_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     # 2、创建链接
 
-tcp_socket.connect(('172.27.35.1',8080))
+tcp_socket.connect(('192.168.44.1',8080))
 
     # 3、发送信息
 
