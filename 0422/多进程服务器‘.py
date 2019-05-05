@@ -9,7 +9,6 @@ def main():
     server_socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
     #固定端口
     server_socket.bind(('',8080))
-
     server_socket.listen()
     while True:
         handler_socket,address = server_socket.accept()
@@ -51,6 +50,5 @@ def main():
         handler_socket.send(reponse.encode('gbk'))
 if __name__=='__main__':
     p=Process(target=main)
-
     p.start()
 

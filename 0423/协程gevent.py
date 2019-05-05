@@ -12,8 +12,9 @@ def speak():
         print('speak',i)
 
 p1=gevent.spawn(talk)
-p2=gevent.spawn(speak)
 p1.join()
+p2=gevent.spawn(speak)
+
 p2.join()
 exit()
 
