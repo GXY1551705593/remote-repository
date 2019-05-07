@@ -8,6 +8,6 @@ class Framework(object):
             if path == '/temp.py':
                 start_response('200 ok', [('server', 'wsgisever'), ('name', 'guazi')])
                 print("aaaaaaaaaaaaaaaaaaaaaaaaa")
-                with open('temp.html', encoding='utf-8') as f:
+                with open('index.html', encoding='utf-8') as f:
                     response = f.read()
                     return response

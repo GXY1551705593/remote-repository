@@ -52,16 +52,15 @@ class HttpServer(object):
         else:
             # 静态资源处理
             # 根据路径，获取对应的数据
-
             if request_path == '/':
                 status_code = '200 ok'
-                with open('login.html', 'rb') as f:
+                with open('login.html','rb') as f:
                     responsebody = f.read()
-
             elif request_path == '/index.html?':
                 status_code = '200 ok'
-                with open('index.html', 'rb') as f:
+                with open('index.html','rb') as f:
                     responsebody = f.read()
+
 
             # 4.1 拼接第一行的数据HTTP/1.1 状态码 说明\r\n
             first_line = 'HTTP/1.1' + status_code + '\r\n'
