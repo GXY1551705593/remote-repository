@@ -1,0 +1,894 @@
+*{
+    margin: 0 ;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+    float: left;
+    padding: 18px 21px;
+}
+.all{
+    min-width: 300px;
+    max-width: 1366px;
+    height: 3000px;
+    margin: 0 auto;
+}
+/*头部*/
+.nav_backgroud{
+    background: #347121;
+    width: 1368px;
+    height:340px;
+    background: linear-gradient(black, #347121);
+}
+/*头部图片*/
+.nav_top{
+    width: 1366px;
+    height: 60px;
+    /*background: red;*/
+    margin: 0 auto;
+}
+.nav_top_left{
+    width: 55px;
+    height: 55px;
+    background: white;
+    /* padding-left: 20px; */
+    margin-left: 75px;
+}
+.nav_top_left img{
+    padding: 2px 1px;
+    height: 52px;
+}
+.city{
+    height: 60px;
+    /*background: #317EF3;*/
+    width: 60px;
+    margin: -62px 104px;
+    color: white;
+}
+.city p{
+    padding: 16px 9px;
+    font-size: 14px;
+}
+.nav_top_right{
+    /* background: #317EF3; */
+    width: 928px;
+    height: 60px;
+    margin: -60px 425px;
+}
+.nav_top_right a{
+    color: white;
+    font-size: 14px;
+}
+.pict2{
+    height: 213px;
+    margin: -94px 264px;
+    float: right;
+}
+.pict3{
+    height: 35px;
+    width: 570px;
+    padding: 38px 235px;
+}
+/*搜索框*/
+.box{
+    height: 60px;
+    width: 660px;
+    margin: -14px 203px;
+}
+.nav_input{
+    height: 60px;
+    width: 623px;
+    margin: -6px 33px;
+    /* float: right; */
+    position: absolute;
+    border-radius: 15px;
+    border: 0;
+    text-indent: 41px;
+    font-size: 24px;
+}
+.seacher{
+    height: 57px;
+    width: 105px;
+    background: #349B5E;
+    float: right;
+    margin: -4px 546px;
+    position: absolute;
+    border: 0px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    font-size: 18px;
+    color: white;
+}
+/*车型信息导航*/
+.nav_main{
+    width: 1200px;
+    height: 270px;
+    /* background: red; */
+    /* border: 1px solid #323232; */
+    margin: -81px 75px;
+    position: absolute;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px 0 rgba(88,100,117,.2);
+}
+/*车型信息导航左边*/
+.nav_main_left{
+    width: 800px;
+    height: 260px;
+    /*background: #317EF3;*/
+    margin: -16px -54px;
+}
+.nav_main_left p{
+    color: black;
+    font-size: 22px;
+    /* margin: 10px 15px; */
+    padding: 35px 46px;
+    /* line-height: 22px; */
+}
+.nav_main_left ul li{
+    padding: 13px 16px;
+}
+.nav_main_left img{
+    margin: -2px 18px;
+    height: 17px;
+}
+.nav_main_right{
+    width: 450px;
+    height: 266px;
+    /*background: red;*/
+    padding-top: -37px;
+    margin: -17px -60px;
+}
+.choose{
+    margin: -40px 13px;
+}
+.choose li{
+    /* padding: 8px 2px; */
+    float: none;
+    margin: -1px -92px;
+}
+.choose li img{
+    height: 18px;
+    width: 18px;
+}
+.choose span{
+    margin: 11px -17px;
+    font-size: 14px;
+}
+.nav_main_right p{
+    color: black;
+    font-size: 22px;
+    /* margin: 10px 15px; */
+    padding: 35px 46px;
+    /* line-height: 22px; */
+}
+.nav_main_right img {
+    margin: -2px 18px;
+    height: 17px;
+}
+/*右侧导航栏*/
+.nav_main_right span{
+    font-size: 14px;
+    /* margin: 0 7px; */
+    padding: 0 8px;
+}
+.seacher_right{
+    width: 395px;
+    height: 150px;
+    /* margin: 1px 52px; */
+    padding: 0 47px;
+}
+.seacher_right_input{
+    width: 244px;
+    height: 55px;
+    /* margin: 1px 16px; */
+    font-size: 16px;
+    text-indent: 27px;
+    border-radius: 4px;
+    border: 0;
+    background: #f5f5f7;
+}
+/*预约卖车按钮*/
+.seacher_right_button{
+    width: 115px;
+    height: 55px;
+    margin: 0px 18px;
+    background: #349B5E;
+    color: white;
+    float: right;
+    /* padding: 0 13px; */
+    border: 0;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.btn_left, .btn_right{
+    width: 190px;
+    height: 60px;
+    margin: 13px -3px;
+    background: #f0fff6;
+    border: 1px solid #3cb46d;
+    color: #349b5e;
+    font-size: 16px;
+}
+.btn_left{
+    border-right: none ;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+}
+.btn_right{
+    border-left: none ;
+    border-radius: 0 4px 4px 0;
+}
+.seacher_right span{
+    color: #349b5e;
+    margin: 34px -198px;
+    position: absolute;
+}
+/*中部二手车信息*/
+.index_ad{
+    width: 1200px;
+    height: 230px;
+    /*background: red;*/
+    position: relative;
+    margin: 216px auto;
+}
+.index_ad img{
+    width: 300px;
+    height: 230px;
+}
+.index_ad ul{
+    padding: 1px 0;
+}
+
+.index_ad li{
+    padding:0 0;
+}
+/*中部二手车第二部分*/
+.index_ad2{
+    margin: -172px auto;
+    width: 1200px;
+    height: 200px;
+    /*background: #317EF3;*/
+}
+.index_ad2_l,.index_ad2_r{
+    width: 100px;
+    height:200px;
+    /*background:blueviolet ;*/
+
+}
+.index_ad2_m{
+    width: 1027px;
+    height: 200px;
+    /*background: red;*/
+    padding: -20px 16px;
+    margin: -18px -4px;
+}
+.index_ad2 ul li{
+    float: left;
+}
+.index_ad2_l{
+    margin: -18px -63px;
+    /*background: url("https://cli-sta.guazistatic.com/c2c_web/prev.d0f4cd4d1c8e5405a36d0a535bd98b3d.png") no-repeat center 70px;*/
+}
+.index_ad2_r{
+    margin: -18px -63px;
+
+}
+.index_ad2 img{
+    height: 30px;
+    width: 30px;
+    margin: 70px 35px;
+}
+.index_ad2_m div{
+    width: 166px;
+    height: 200px;
+    float: left;
+    background: url("https://image1.guazistatic.com/qn181115182708299d6f5f31f91331488cfaaea89a0007.png?imageView2/2")
+    no-repeat center;
+    background-size: 151px 70px;
+    background-position: -6px 45px;
+}
+.index_ad2_m p{
+    margin: 123px 45px;
+}
+.index_ad2_m .p1{
+    font-size: 14px;
+    color: #181818;
+    text-align: center;
+}
+.index_ad2_m .p2{
+    font-size: 14px;
+    color: #3cb46d;
+    text-align: center;
+}
+.index_bg{
+    width: 1366px;
+    height: 1310px;
+    background-color: #f5f5f7;
+    margin-top: 189px;
+}
+.index_bg .s1{
+    font-size: 28px;
+    color: #000;
+    line-height:180px;
+    margin:0px 75px
+}
+.c1{
+    width: 800px;
+    height: 30px;
+    /* background: red; */
+    margin-top: -40px;
+    margin-left: 20px;
+}
+.c1 li{
+margin: -13px -6px;
+}
+.c1 a{
+    font-size: 16px;
+    color: #999;
+}
+.car_info{
+    width: 1217px;
+    height: 320px;
+    /*background: blue;*/
+    margin:24px auto;
+}
+.car_info div{
+    width: 290px;
+    height:320px;
+    background:white;
+    float: left;
+}
+.car_info .info2,.info3{
+    margin-left: 19px;
+}
+.car_info .info4{
+    float: right;
+}
+.info1 img{
+    height: 194px;
+}
+ .car_info  p{
+    margin: 25px 0;
+ }
+ .car_info  .c1{
+    font-size: 17px;
+    color: #495056;
+}
+.car_info  .c2{
+    color: #a5abb2;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    margin-left: 17px;
+}
+.car_info  .p1{
+    font-size: 20px;
+    color: #fa5428;
+    padding-left: 4px;
+    margin-left: 17px;
+}
+.car_info  del{
+    color: #a5abb2;
+    font-size: 14px;
+}
+.car_info  .a1{
+    width: 50px;
+    height: 22px;
+    color: #d7a844;
+    background: #fcf2d5;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+}
+.car_info  .a2{
+    width: 50px;
+    height: 22px;
+    color: #ff9650;
+    background: #ffeeda;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+}
+.cut_price{
+    padding: 0 auto;
+    font-size: 14px;
+    margin: 20px 620px;
+    position: absolute;
+}
+.cut_price img{
+    margin: -5px 0px;
+}
+/*毛豆新车*/
+.maodou{
+font-size: 28px;
+    color: #000;
+    margin: 45px 70px;
+    position: absolute;
+}
+/*汽车广告*/
+.car_ad{
+    width: 1212px;
+    height: 350px;
+    /*background: blue;*/
+    margin: 110px auto;
+}
+.car_ad div{
+    /*background: red;*/
+    float: left;
+    background:rgb(245,245,247);
+}
+.car_ad .car_ad1,.car_ad2,.car_ad4{
+    width: 230px;
+    height: 350px;
+
+}
+.car_ad .car_ad3{
+    height: 350px;
+    width: 480px;
+    background: white;
+}
+.car_ad .car_ad2,.car_ad3{
+    margin-left: 14px;
+}
+.car_ad .car_ad4{
+    float: right;
+}
+.car_ad1 img{
+    width: 230px;
+    height: 350px;
+
+}
+.car_ad2 img{
+    width: 227px;
+    height: 94px;
+    margin-top: 85px;
+}
+.car_ad2 p{
+    margin: 37px 73px;
+}
+.car_ad2 .s1{
+    color: #495056;
+    font-size: 16px;
+}
+.car_ad2 .s2{
+    margin-top: 5px;
+    color: #f76367;
+    font-size: 16px;
+    line-height: 40px;
+}
+/**/
+.car_ad4 img{
+    width: 150px;
+    height: 158px;
+    margin: 15px 41px;
+
+}
+.car_ad4 .t1{
+    margin: 37px 73px;
+    width: 157px;
+}
+.car_ad4 .s1{
+    color: #495056;
+    font-size: 16px;
+}
+.car_ad4 .s2{
+    margin-top: 5px;
+    color: #f76367;
+    font-size: 16px;
+    line-height: 40px;
+}
+/*car_ad3*/
+.car_ad3_t,.car_ad3_b{
+    height: 167px;
+    width:480px ;
+    background:rgb(245,245,247);
+}
+.car_ad3_b{
+    margin-top: 16px;
+}
+.car_ad3 img{
+    width: 263px;
+    height: 89px;
+    margin:45px 40px;
+}
+.s31{
+        color: #495056;
+    font-size: 16px;
+}
+.s32{
+
+    color: #f76367;
+    font-size: 16px;
+    line-height: 40px;
+}
+.t3{
+    margin: -123px 286px;
+    width: 112px;
+}
+/*买车卖车流程*/
+.buysell_step{
+    width: 1366px;
+    height: 432px;
+	/*background:url("https://cli-sta.guazistatic.com/c2c_web/mask.3642195d3f6eed370c899cc57e6f772e.png") 1100px;*/
+	position:relative;
+	animation:mymove 20s infinite;
+}
+@keyframes mymove
+{
+	0% {background:url("https://sta.guazistatic.com/static/c2c/web/index/buy-step-contract.jpg") no-repeat -240px 0;
+    background-size: 1660px 432px;}
+	25% {background:url("https://sta.guazistatic.com/static/c2c/web/index/buy-step-deal.jpg") no-repeat -240px 0;background-size: 1660px 432px;}
+	50% {background:url("https://sta.guazistatic.com/static/c2c/web/index/buy-step-order.jpg") no-repeat -240px 0;background-size: 1660px 432px;}
+	75% {background:url("https://sta.guazistatic.com/static/c2c/web/index/buy-step-see.jpg") no-repeat -240px 0;background-size: 1660px 432px;}
+    100% {background:url("https://sta.guazistatic.com/static/c2c/web/index/buy-step-contract.jpg") no-repeat -240px 0;background-size: 1660px 432px;}
+}
+.buysell_step img{
+    width: 1366px;
+    height: 432px;
+    /*background-position: -374px 0px;*/
+}
+.buysell_steptext{
+    /*background: red;*/
+    height: 320px;
+    width: 500px;
+    margin: -375px 128px;
+    position: absolute;
+}
+.buysell{
+    margin: -20px -60px;
+    width: 600px;
+    font-size: 16px;
+    color: #181818;
+    position: absolute;
+}
+.greenline{
+    border-bottom: 3px solid #22ac38;
+    width: 65px;
+    margin: 48px 61px;
+}
+.buysell_step .p1{
+    font-size: 40px;
+    color: #181818;
+    margin: 85px 0px;
+    position: absolute;
+}
+.buysell_step .p2{
+    font-size: 18px;
+    color: #181818;
+    margin: 150px 0;
+    position: absolute;
+}
+.buysell_steptext .icon{
+    width: 412px;
+    height: 64px;
+    /*background: blue;*/
+    border: 0;
+    margin-top: 268px;
+}
+.icon div{
+    width: 103px;
+    height: 64px;
+    /*background: red;*/
+    float: left;
+}
+.icon div img{
+    width: 30px;
+    height: 30px;
+    background-position:2px 0px;
+}
+.icon div span img{
+    width: 14px;
+    height: 10px;
+    margin-left: 10px;
+}
+.icon div span {
+    color: #999999;
+    font-size: 14px;
+}
+/*常见问题*/
+.problem{
+    width: 1020px;
+    height: 420px;
+    /*background: #999999;*/
+    margin: 85px auto;
+}
+.problem div{
+    font-size: 40px;
+    /*color: #181818;*/
+    font-weight: 700;
+    text-align: center;
+}
+.problem_item{
+    width: 1020px;
+    height: 150px;
+    /*background: red;*/
+    margin-top: 68px;
+}
+.problem_item_left,.problem_item_right{
+    width: 470px;
+    height: 150px;
+    border-bottom: 1px #e8f0ea solid;
+    /*background: red;*/
+    /*margin-top: 68px;*/
+}
+.problem_item_left{
+    float: left;
+    background: white;
+
+}
+.problem_item_right{
+    float: right;
+    background: white;
+}
+.problem img{
+    height: 22px;
+    width: 25px;
+}
+.problem  p{
+    margin: -20px -0px;
+    position: absolute;
+}
+
+.problem  .tit{
+    font-size: 18px;
+    font-weight: 700;
+    color: #3cb46d;
+    text-indent: 41.5px;
+}
+.problem .con{
+    font-size: 14px;
+    line-height: 27px;
+    color: #181818;
+    position: relative;
+    margin: 50px 1px;
+    text-align: left;
+    font-weight:500;
+}
+/*常见问题e*/
+.foot_buysell{
+    width: 1366px;
+    height: 120px;
+    background:url("https://cli-sta.guazistatic.com/c2c_web/foot-buysell-entry.6170e8f3cb5feb45f1d1e2a0b1d3c2e0.jpg") no-repeat;
+    margin-top: 482px;
+    position: absolute;
+}
+.foot_buysell_tel{
+    width: 395px;
+    height: 66px;
+    /*background: #317EF3;*/
+    margin: 30px 273px;
+    position: relative;
+}
+.foot_buysell_tel p{
+    width: 382px;
+    font-size: 14px;
+    color: #858d96;
+    text-align: center;
+}
+/*按钮*/
+.foot_buysell .btn{
+    width: 370px;
+    height: 66px;
+    /*background: red;*/
+    position: relative;
+    margin: -97px 317px;
+    float: right;
+}
+.foot_buysell .btn a{
+    width: 179px;
+    height: 66px;
+    /*position:absolute;*/
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background: #3cb46d;
+    display: inline-block;
+    float: left;
+    line-height: 64px;
+}
+.foot_buysell .btn .a2{
+    margin-left: 12px;
+    background: #97cf00;
+}
+/*底部*/
+.footer{
+    width: 1366px;
+    height: 450px;
+    background: #2a2c37;
+    margin-top: 688px;
+}
+.footer .clearfix{
+    width: 1142px;
+    height: 135px;
+    color: #b8b8b8;
+    margin: 50px 120px;
+    position: absolute;
+}
+.footer .clearfix div{
+    float: left;
+}
+.footer .clearfix .d1{
+    width: 108px;
+    height: 100px;
+    background: url("https://cli-sta.guazistatic.com/c2c_web/global-3.bddc7dbcd1b47bf88946900826c9abf1.png") no-repeat;
+    background-position: -147px -84px;
+    background-size: 252px 316px;
+}
+.footer .clearfix .d2{
+    width: 360px;
+    height: 100px;
+    color: #b8b8b8;
+    margin-left: 30px;
+}
+.footer .clearfix .d2 p{
+    line-height: 22px;
+    font-size: 14px;
+}
+.footer .clearfix .d2 span{
+    font: 12px/1.5 PingFang SC,Microsoft YaHei,arial,helvetica,sans-serif;
+}
+.footer .clearfix .d2 .tel{
+    margin-left: 30px;
+    font-size: 14px;
+}
+.clearfix .d3,.d4{
+    width: 90px;
+    height: 130px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 2px;
+    line-height: 22px;
+}
+.clearfix .d3 img{
+    width: 87px;
+    height: 87px;
+}
+/*下载app二维码*/
+.clearfix .d4 {
+    margin-left: 26px;
+}
+.clearfix .d4 img{
+    width: 87px;
+    height: 87px;
+}
+.hongbao{
+    width: 80px;
+    height: 16px;
+    background: #22ac38;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #fff;
+    display: inline-block;
+    line-height: 16px;
+}
+/*最右侧文字*/
+.clearfix .d5{
+    margin-left: 50px;
+    /*background: red;*/
+    line-height: 22px;
+    font-size: 14px;
+}
+.clearfix .d5 .p2,.p3{
+    line-height: 20px;
+    font-family: simhei;
+    font-size: 12px;
+}
+.clearfix .d5 .p2{
+    margin-top: 17px;
+}
+.clearfix .d5 .p4{
+    /*margin-top: 11px;*/
+    color: #939393;
+    line-height: 28px;
+    font-size: 12px;
+}
+.clearfix .d5  img{
+    margin: 11px -2px;
+
+}
+.clearfix .d5 .p4 {
+    margin: 11px 5px;
+    display: inline-block;
+    position: absolute;
+}
+/*瓜子®/瓜子二手车®*/
+.guazi_name{
+    width:640px;
+    height: 20px;
+    margin: 200px 120px;
+    /*background: #317EF3;*/
+    position: absolute;
+    width: 1190px;
+    color: #666;
+    font-size: 12px;
+}
+/*热门品牌：*/
+.footer .link{
+    color: #666;
+    width: 1200px;
+    height: 22px;
+    /*background:white ;*/
+    margin:220px 120px 10px;
+    position: absolute;
+
+}
+.footer .link .left{
+    font-size: 16px;
+    width: 81px;
+    /*background: red;*/
+    float: left;
+}
+.link_con{
+    width: 1100px;
+    height: 22px;
+    float: right;
+}
+.footer .link ul  {
+    display: inline-block;
+    margin-left: -66px;
+
+}
+.footer .link ul li {
+    margin: -19px -2px;
+
+}
+.footer .link ul li a{
+    margin-right:-4px;
+    font-size: 12px;
+    color: #666;
+}
+/*地址、电话-*/
+.footer .address{
+    width: 950px;
+    height: 20px;
+    /*background: white;*/
+    color: #666;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    position: relative;
+    margin-top: 179px;
+    margin-left: 250px;
+}
+.footer .address div{
+    float: left;
+}
+/*左边*/
+.address .address_l{
+    width: 216px;
+    height: 20px;
+    /*background: #317EF3;*/
+    text-align: left;
+}
+/*中间*/
+.address .address_m{
+    width: 499px;
+    height: 20px;
+    /*background: #317EF3;*/
+    text-align: left;
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+}
+/*右边*/
+.address .address_r{
+    width: 100px;
+    height: 20px;
+    /*background: #317EF3;*/
+    text-align: left;
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+}
+
+
+
+
+
+

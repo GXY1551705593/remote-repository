@@ -1,0 +1,17 @@
+*{
+    margin: 0 0;
+}
+.sousuo{
+    height: 59px;
+    width: 447px;
+    margin: 200px 600px;
+    text-indent: 25px;
+    background: white url(ss.png) no-repeat 335px 3px;
+    border: 1px solid;
+    border-radius: 11px;
+    font-size: 19px;
+}
+.tp{
+    background-position: 10px 10px;
+    width: 50px;
+}

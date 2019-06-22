@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>旋转的正方体</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0
+        }
+        .wrap{
+            perspective:2000px;
+        }
+        .wrap ul{
+            width: 222px;
+            height: 222px;
+            margin: 100px auto;
+            position: relative;
+            animation: move 5s infinite;
+            transform-style: preserve-3d;
+                transform-origin: 84px 72px 33px;
+
+        }
+        .wrap ul li{
+            left:0;
+            top:0;
+            width: 220px;
+            height: 220px;
+            color:white ;
+            font-size: 60px;
+            list-style: none;
+            text-align: center;
+            line-height: 196px;
+            position: absolute;
+            border:0px solid #000;
+            background: rgba(000,000,000,000);
+
+        }
+        .wrap ul li:nth-child(1){
+            transform-origin: top;
+            transform: rotateX(-90deg);
+        }
+        .wrap ul li:nth-child(2){
+            transform-origin: bottom;
+            transform: rotateX(90deg);
+        }
+        .wrap ul li:nth-child(3){
+            transform-origin: left;
+            transform: rotateY(90deg);
+        }
+        .wrap ul li:nth-child(4){
+            transform-origin: right;
+            transform: rotateY(-90deg);
+        }
+        .wrap ul li:nth-child(5){
+            transform: translateZ(-125px);
+        }
+        .wrap ul li:nth-child(6){
+            transform:translateZ(0px);
+        }
+        @keyframes move {
+            0%{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            /*25%{*/
+                /*transform: rotateX(90deg) rotateY(90deg);*/
+            /*}*/
+            /*50%{*/
+                /*transform: rotateX(180deg) rotateY(180deg);*/
+            /*}*/
+            /*75%{*/
+                /*transform: rotateX(270deg) rotateY(270deg);*/
+            /*}*/
+            100%{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        img{
+            height: 220px;
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+<ul>
+    <li><img src="img/tp1.png"></li>
+    <li><img src="img/tp2.png"></li>
+    <li><img src="img/tp3.png"></li>
+    <li><img src="img/tp4.png"></li>
+    <li><img src="img/tp5.png"></li>
+    <li><img src="img/tp6.png"></li>
+</ul>
+</div>
+</body>
+</html

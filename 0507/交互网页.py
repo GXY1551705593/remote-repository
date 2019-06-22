@@ -4,8 +4,9 @@ import multiprocessing
 import sys
 import pymysql
 
-connect = pymysql.connect(host='localhost', port=3306,
-                        database='shuju', user='root', password='mysql', charset='utf8')
+connect = pymysql.connect\
+(host='localhost', port=3306,database='shuju',
+ user='root', password='mysql', charset='utf8')
 cur =connect.cursor()
 
 
@@ -37,8 +38,10 @@ class HttpServer(object):
             print(str_password)
             inname=str_name
             inpassword=str_password
+            #数据库操作
             sql_add='insert into infor values (0,%s,%s)'
             cur.execute(sql_add,[inname,inpassword])
+            #上传到数据库
             connect.commit()
         ret_list = data.split('\r\n')
 
@@ -64,13 +67,13 @@ class HttpServer(object):
         # 根据路径，获取对应的数据
         if request_path == '/':#登录网页
             status_code = '200 ok'
-            with open('login.html','rb') as f:
+            with open('login.html','r') as f:
                 responsebody = f.read()
                 #print(responsebody.decode())
 
         elif request_path == '/index.html':#登录后网页
             status_code = '200 ok'
-            with open('index.html','rb') as f:
+            with open('index.html','r') as f:
                 responsebody1 = f.read()
                 list_sql=responsebody1.decode().split('<hr>')
                 print('***************')
